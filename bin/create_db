@@ -1,0 +1,2 @@
+#!/bin/sh
+python -c "from tldrhn import db; db.create_all()"

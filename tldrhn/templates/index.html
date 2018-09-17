@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
+	{% for story in stories %}
 	<div class="card">
 		<div class="card-content">
-			<h2 class="card-title">Cum Laboriosam ut Distinctio</h2>
-			<p class="card-sum">Aut adipisci consequuntur autem incidunt repudiandae aliquid. Sit non numquam numquam. Voluptatem blanditiis quia consectetur et aspernatur. Mollitia quae a dolores ut in. Veritatis ducimus distinctio veniam odio ut illo similique aut. Necessitatibus esse qui necessitatibus repellat libero consequatur doloremque. Et perferendis eaque eius est est velit nesciunt ducimus.</p>
+			<h2 class="card-title">{{ story.title }}</h2>
+			<p class="card-sum">{{ story.summary }}</p>
 			<span class="card-link">
-				<a href="">Link</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">View on HN</a>
+				<a href="{{ story.url }}">Link</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://news.ycombinator.com/item?id={{ story.id }}">View on HN</a>
 			</span>
 		</div>
 	</div>
+	{% endfor %}
 {% endblock %}
