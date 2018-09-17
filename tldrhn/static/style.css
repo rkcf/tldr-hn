@@ -12,6 +12,17 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+a {
+	color: #FC913A;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFC58A;
+}
+
+
+
 #header h1 {
 	background: #AC72F3;
 	margin-top: 0;
@@ -40,13 +51,16 @@ body {
 }
 
 .card-link a {
-	color: #FC913A;
-	text-decoration: none;
 	font-weight: 700;
 }
 
-.card-link a:hover {
-	color: #FFC58A;
+#pagination {
+	margin: 3rem;
+	text-align: center;
+}
+
+#pagination a {
+	margin: 1rem;
 }
 
 @media screen and (min-width: 961px) {
