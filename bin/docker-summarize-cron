@@ -1,0 +1,2 @@
+#!/bin/sh
+docker exec tldrhn-uwsgi /bin/ash -c "python3 -c 'from tldrhn import summarize; summarize.main()'"
