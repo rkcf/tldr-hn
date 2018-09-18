@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  tldrhn-uwsgi:
+    container_name: tldrhn-uwsgi
+    build:
+      context: ./
+
+  nginx-proxy:
+    container_name: tldrhn-nginx
+    build:
+      context: ./nginx
+    ports:
+      - 80:80
+    depends_on:
+      - tldrhn-uwsgi
