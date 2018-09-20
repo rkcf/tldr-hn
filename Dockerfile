@@ -15,9 +15,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install nltk data
 RUN python3 -m nltk.downloader -d /var/www/nltk_data punkt
 
+COPY docker-entrypoint.sh /usr/bin/docker-entrypoint.sh
+
 # Add source to container
 COPY tldrhn /var/www/tldrhn
 RUN chown -R uwsgi:uwsgi /var/www
 
 USER uwsgi
-CMD uwsgi --ini /var/www/tldrhn/uwsgi.ini
+ENTRYPOINT docker-entrypoint.sh
