@@ -2,7 +2,7 @@
 
 A website that displays summarized stories from [Hacker News](https://news.ycombinator.com/).
 
-View at [http://tldrhn.rkcf.me]
+View at http://tldrhn.rkcf.me
 
 ## Deployment
 
