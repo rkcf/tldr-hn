@@ -11,7 +11,7 @@ feedparser==5.2.1
 Flask==1.0.2
 Flask-SQLAlchemy==2.3.2
 haxor==1.2.1
-idna==2.8
+idna==2.7
 itsdangerous==1.1.0
 jieba3k==0.35.1
 Jinja2==2.10
@@ -23,7 +23,7 @@ nltk==3.4
 Pillow==5.4.1
 python-dateutil==2.7.5
 PyYAML==3.13
-requests==2.4.0
+requests==2.20.0
 requests-file==1.4.3
 singledispatch==3.4.0.3
 six==1.12.0
