@@ -19,7 +19,7 @@ lxml==4.3.0
 MarkupSafe==1.1.0
 multidict==4.5.2
 newspaper3k==0.2.8
-nltk==3.4
+nltk==3.4.5
 Pillow==5.4.1
 python-dateutil==2.7.5
 PyYAML==3.13
