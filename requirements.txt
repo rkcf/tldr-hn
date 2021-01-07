@@ -15,7 +15,7 @@ idna==2.7
 itsdangerous==1.1.0
 jieba3k==0.35.1
 Jinja2==2.10
-lxml==4.3.0
+lxml==4.6.2
 MarkupSafe==1.1.0
 multidict==4.5.2
 newspaper3k==0.2.8
